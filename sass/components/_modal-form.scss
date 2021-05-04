@@ -1,0 +1,99 @@
+.form {
+    width: 448px;
+   padding-top: 75px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+.form__title {
+    position: absolute;
+    top: 40px;  
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    color: var(--text-title-color); 
+  }
+
+  .form__field {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+  .form__input {
+    height: 40px;
+    width: 100%;
+    margin: 0;
+    padding: 11px 12px 11px 42px;
+    color: var(--text-color);
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    box-sizing: border-box;
+    border-radius: 4px;
+    cursor: pointer;
+    outline: none;
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover {
+      border-color: var(--accent-color);
+     &:focus {
+        border: 1px solid var(--accent-color);
+        outline-color: var(--accent-color);
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      }
+    
+    }
+
+  }
+  .form__input:hover + .form__icon,
+  .form__input:focus + .form__icon {
+    fill: var(--accent-color);
+  }
+  
+  
+  
+  .form__label{
+    font-size: 12px;
+   line-height: 14px;
+   letter-spacing: 0.01em;
+    margin-bottom: 4px;
+    color: var(--text-color);
+    &:focus{
+      border-color: #188ce8;
+    }
+  }
+  .form__icon {
+    position: absolute;
+    top:50%;
+    left: 12px;      
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+   .form__textarea {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    box-sizing: border-box;
+    border-radius: 4px;
+    resize: none;  
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+    border: 1px solid var(--accent-color);
+    outline-color: var(--accent-color);
+  }
+  &::placeholder {
+    padding-left: 16px;
+    padding-top: 12px;
+    font-size: 14px;
+   line-height: 14px;
+     letter-spacing: 0.01em;
+ color: rgba(117, 117, 117, 0.5); 
+ 
+  }
+   }
+   
+ 
+ 

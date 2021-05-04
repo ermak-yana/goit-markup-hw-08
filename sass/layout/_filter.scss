@@ -1,0 +1,43 @@
+.filter {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 50px;
+  }
+  
+  .filter__item:not(:last-child) {
+    margin-right: 8px;
+  }
+  
+  
+  .filter__button {
+    background-color: #F5F4FA;
+    display: inline-block;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    padding: 6px 22px;
+    border-radius: 4px;
+    border: transparent;
+    cursor: pointer;
+    -webkit-transition: var(--transition-bgc-color-shadow);
+    -o-transition: var(--transition-bgc-color-shadow);
+    transition: var(--transition-bgc-color-shadow);
+    &:hover,
+    &:focus {
+    color: var(--primary-white-color);
+    background-color: var(--accent-color);
+    -webkit-box-shadow: var(--filter-button-swdow);
+            box-shadow: var(--filter-button-swdow);
+  }
+  
+  }
+  

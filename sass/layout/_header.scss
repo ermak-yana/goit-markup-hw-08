@@ -1,0 +1,20 @@
+.header {
+    padding-top: 24px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #ececec;
+  }
+
+.header.border {
+    border-bottom: 1px solid #ececec;
+  }
+  .header__container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  
+  .header__nav {
+    display: inline-flex;
+    align-items: center;
+    margin-right: auto;
+  }

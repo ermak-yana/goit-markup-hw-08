@@ -1,0 +1,33 @@
+@import "./vendors/modern_normalize";
+
+@import "./utils/Variables";
+ 
+@import "./base/common";
+@import "./base/container";
+
+@import "./components/button";
+@import "./components/menu";
+@import "./components/social-list";
+@import "./components/logo";
+@import "./components/form";
+@import "./components/modal";
+@import "./components/modal-form";
+@import "./components/checkbox";
+
+
+
+@import "./layout/header";
+@import "./layout/hero";
+@import "./layout/section";
+@import "./layout/description";
+@import "./layout/jobs";
+@import "./layout/team";
+@import "./layout/clients";
+@import "./layout/portfolio";
+@import "./layout/filter";
+@import "./layout/filter_card";
+@import "./layout/filter-box";
+@import "./layout/animation-box";
+@import "./layout/footer";
+
+
