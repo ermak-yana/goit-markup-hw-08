@@ -2,8 +2,8 @@
   display: inline-flex;
   padding: 10px 32px;
   min-width: 200px;
-  color: var(--primary-white-color);
-  background-color: var(--accent-color);
+  color: $primary-white-color;
+  background-color: $accent-color;
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
@@ -11,18 +11,120 @@
   letter-spacing: 0.06em;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 4px 4px $button-swadow;
   border-radius: 4px;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  &button:hover,
-  &bottom:focus {
-  background-color:#188ce8;
+  transition: $transition-bg-color;
+  &:hover,
+  &:focus {
+    background-color: $button-hover;
   }
+}
+
+.subscribe--button {
+  align-items: center;
+  text-align: center;
+  padding-left: 29px;
+  padding-right: 28px;
+}
+.subscribe__icon {
+  margin-left: 10px;
+  fill: currentColor;
+}
+.button--send {
+  align-items: center;
+  text-align: center;
+  padding-left: 56px;
+  padding-right: 55px;
+}
+
+.modal__button-close {
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid $modal-close;
+  background: $primary-white-color;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.modal__icon {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  fill: $black-color-acc-logo;
+  transition: $transition-fill;
+  .modal__button-close:hover &,
+  .modal__button-close:focus & {
+    fill: $accent-color;
   }
-  
-  .button .icon {
-    margin-left: 10px;
-    fill: var(--primary-white-color);
+}
+
+.filter__button {
+  background-color: $accent-bg-color;
+  display: inline-block;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  padding: 6px 22px;
+  border-radius: 4px;
+  border: transparent;
+  cursor: pointer;
+  transition: $transition-bgc-color-shadow;
+  &:hover,
+  &:focus {
+    color: $primary-white-color;
+    background-color: $accent-color;
+    box-shadow: $filter-button-swdow;
   }
+}
+
+.page-header__button-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+.button-menu__icon-open {
+  fill: $black-color-acc-logo;
+  transition: $transition-fill;
+  .page-header__button-menu:hover &,
+  .page-header__button-menu:focus & {
+    fill: $accent-color;
+  }
+}
+.page-header__button-menu-close {
+  position: absolute;
+  display: block;
+  right: 0;
+  top: 10px;
+  width: 40px;
+  height: 40px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+.button-menu__icon-close {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  fill: $black-color-acc-logo;
+  transition: $transition-fill;
+  .page-header__button-menu-close:hover &,
+  .page-header__button-menu-close:focus & {
+    fill: $accent-color;
+  }
+}
 
   
