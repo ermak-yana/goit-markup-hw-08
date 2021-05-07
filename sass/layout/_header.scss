@@ -1,3 +1,4 @@
+
 .page-header {
   //   min-width: 320px;
   padding-top: 10px;
@@ -218,4 +219,12 @@
       line-height: 1.17;
     }
   }
+}
+.auth-nav__link--tel{
+  @media screen and (max-width: 767px) {
+    font-size: 34px;
+      line-height: 1.17;
+      color: $accent-color;
+  }
+
 }
