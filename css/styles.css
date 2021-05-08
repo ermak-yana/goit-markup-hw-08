@@ -1049,13 +1049,6 @@ img {
 }
 
 @media screen and (max-width: 767px) {
-  .auth-nav__link:hover, .auth-nav__link:focus {
-    font-size: 34px;
-    line-height: 1.17;
-  }
-}
-
-@media screen and (max-width: 767px) {
   .auth-nav__link--tel {
     font-size: 34px;
     line-height: 1.17;
@@ -1064,24 +1057,18 @@ img {
 }
 
 .hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #c4c4c4;
-  padding-top: 118px;
-  padding-bottom: 118px;
-  text-align: center;
-  margin: 0 auto;
   max-width: 1600px;
-}
-
-@media screen and (min-width: 1200px) {
-  .hero {
-    padding-top: 200px;
-    padding-bottom: 200px;
-  }
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 }
 
 .hero--banner {
-  height: 400px;
-  max-width: 480px;
   margin-left: auto;
   margin-right: auto;
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/Hero-mobile.jpg);
@@ -1098,7 +1085,6 @@ img {
 
 @media screen and (min-width: 768px) {
   .hero--banner {
-    max-width: 768px;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/Hero-tablet.jpg);
   }
 }
@@ -1111,8 +1097,6 @@ img {
 
 @media screen and (min-width: 1200px) {
   .hero--banner {
-    height: 600px;
-    max-width: 1600px;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-desktop.jpg);
   }
 }

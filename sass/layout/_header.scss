@@ -212,13 +212,7 @@
   &:focus {
     color: $accent-color;
   }
-  @media screen and (max-width: 767px) {
-    &:hover,
-    &:focus {
-      font-size: 34px;
-      line-height: 1.17;
-    }
-  }
+  
 }
 .auth-nav__link--tel{
   @media screen and (max-width: 767px) {
